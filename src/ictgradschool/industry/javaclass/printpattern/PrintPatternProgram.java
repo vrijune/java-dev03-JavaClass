@@ -12,7 +12,7 @@ public class PrintPatternProgram {
         System.out.println("First Pattern");
 
         // TODO Uncomment this code once you've created the Pattern class.
-        /*
+
         Pattern top = new Pattern(15, '*');
         
         Pattern sideOfFirstLine = new Pattern(7, '#');
@@ -25,14 +25,22 @@ public class PrintPatternProgram {
         for (int i = 0; i < 6; i++) {
             middle.setNumberOfCharacters(middle.getNumberOfCharacters() + 1);
             System.out.println(sideOfLine.toString() + middle.toString() + sideOfLine.toString());
-        }*/
+        }
         
         System.out.println();
     }
     
     private void printPatternTwo() {
         System.out.println("Second Pattern");
-        // You complete the code to produce the second pattern
+        Pattern top = new Pattern(36, '@');
+        Pattern sideOfFirstLine = new Pattern(13, '=');
+        Pattern sideOfLine = new Pattern(13, '&');
+        Pattern middle = new Pattern(1, '.');
+
+        for (int i = 0; i < 6; i++) {
+            middle.setNumberOfCharacters(middle.getNumberOfCharacters() + 1);
+            System.out.println(sideOfLine.toString() + middle.toString() + sideOfLine.toString());
+        }
     }
 
     public static void main(String[] args) {

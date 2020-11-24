@@ -30,34 +30,36 @@ public class Deodorant {
     // TODO Implement all methods below this line.
 
     public double getPrice() {
-        return 0;
+        return price;
     }
 
+
+
     public String getBrand() {
-        return null;
+        return brand;
     }
 
     public boolean isRollOn() {
-        return false;
+        return rollOn;
     }
 
     public String getFragrance() {
-        return null;
+        return fragrance;
     }
 
-    public void setPrice(double price) {
-
-    }
-
-    public void setBrand(String brand) {
+    public void setPrice(double price) {this.price = price;
 
     }
 
-    public void setFragrance(String fragrance) {
+    public void setBrand(String brand) {this.brand = brand;
+
+    }
+
+    public void setFragrance(String fragrance) {this.fragrance = fragrance;
 
     }
 
     public boolean isMoreExpensiveThan(Deodorant other) {
-        return false;
+        return this.price> other.getPrice();
     }
 }
