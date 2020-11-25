@@ -32,15 +32,21 @@ public class PrintPatternProgram {
     
     private void printPatternTwo() {
         System.out.println("Second Pattern");
-        Pattern top = new Pattern(36, '@');
-        Pattern sideOfFirstLine = new Pattern(13, '=');
-        Pattern sideOfLine = new Pattern(13, '&');
-        Pattern middle = new Pattern(1, '.');
 
+        Pattern top = new Pattern(36, '@');
+        Pattern sideOfFirstLine = new Pattern(12, '=');
+        Pattern sideOfLine = new Pattern(12, '&');
+        Pattern middle = new Pattern(12, '.');
+
+
+        System.out.println(top);
+        System.out.println(sideOfFirstLine.toString() + middle.toString() + sideOfFirstLine.toString());
         for (int i = 0; i < 6; i++) {
-            middle.setNumberOfCharacters(middle.getNumberOfCharacters() + 1);
+            middle.setNumberOfCharacters(middle.getNumberOfCharacters() - 2);
+            sideOfLine.setNumberOfCharacters(sideOfLine.getNumberOfCharacters() + 1);
             System.out.println(sideOfLine.toString() + middle.toString() + sideOfLine.toString());
         }
+        System.out.println("<<< Process finished." );
     }
 
     public static void main(String[] args) {
