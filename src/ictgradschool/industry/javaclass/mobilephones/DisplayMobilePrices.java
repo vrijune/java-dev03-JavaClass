@@ -47,11 +47,11 @@ public class DisplayMobilePrices {
         }
 
         // TODO Uncomment these lines once you've implemented the corresponding MobilePhone methods.
-//        if (annsPhone.isCheaperThan(adrianasPhone)) {
-//            System.out.println("Ann wants a new phone");
-//        } else {
-//            System.out.println("Adriana wants a new phone");
-//        }
+        if (annsPhone.isCheaperThan(adrianasPhone)) {
+            System.out.println("Ann wants a new phone");
+        } else {
+            System.out.println("Adriana wants a new phone");
+        }
     }
 
     public static void main(String[] args) {
