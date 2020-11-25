@@ -7,10 +7,11 @@ public class Lecturer {
     private int staffId;
     private String[] papers;
     private boolean onLeave;
-    
+
     public Lecturer(String name, int staffId, String[] papers, boolean onLeave) {
         // TODO Complete this constructor method
     }
+
     // TODO Insert getName() method here
     public String getName() {
         return name;
@@ -53,11 +54,17 @@ public class Lecturer {
     }
 
     // TODO Insert toString() method here
-    public String
+    public String toString() {
 
-    
+        return "id:" + staffId + " " + name + " is teaching " + papers.length + " papers.";
+    }
+
     // TODO Insert teachesMorePapersThan() method here
+    public boolean teachesMorePapersThan(Lecturer other) {
+        return papers.length > other.papers.length;
+    }
 
 }
+
 
 

@@ -49,11 +49,8 @@ public class MobilePhone {
 
     // TODO Insert toString() method here
         public String toString() {
-            return "MobilePhone{" +
-                    "brand='" + brand + '\'' +
-                    ", model='" + model + '\'' +
-                    ", price=" + price +
-                    '}';
+            {return brand + " " + model + " which cost $" + price;
+            }
         }
     // TODO Insert isCheaperThan() method here
     public boolean isCheaperThan(MobilePhone other){
@@ -62,10 +59,10 @@ public class MobilePhone {
 
 
     // TODO Insert equals() method here
-    public boolean equals(model other){
-        if (other instanceof model){
-            model otherm =  Model other;
-            return this.model == other.getModel();
+    public boolean equals(Object obj){
+        if (obj instanceof MobilePhone){
+            MobilePhone other =  (MobilePhone) obj;
+            return brand.equals(other.brand) && model.equals(other.model) && Math.abs(price - other.price) < 1e-12;
         }
         return false;
 

@@ -29,8 +29,8 @@ public class DisplayMobilePrices {
     }
     
     private void printNewPurchase(String name, MobilePhone phone) {
-        // TODO Uncomment this line once you've implemented the corresponding MobilePhone methods.
-//         System.out.println(name + " has now purchased a new " + phone.getBrand() + " " + phone.getModel() + " for $" + phone.getPrice());
+       //  TODO Uncomment this line once you've implemented the corresponding MobilePhone methods.
+      System.out.println(name + " has now purchased a new " + phone.getBrand() + " " + phone.getModel() + " for $" + phone.getPrice());
     }
     
     private void comparePhones(MobilePhone jonathansPhone, MobilePhone annsPhone,

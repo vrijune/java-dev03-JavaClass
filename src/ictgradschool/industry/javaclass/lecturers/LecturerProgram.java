@@ -44,20 +44,20 @@ public class LecturerProgram {
         System.out.println("----------------------------");
         for (int i = 0; i < lecturers.length; i++) {
             // TODO Uncomment these lines once you've implemented the corresponding Lecturer methods.
-//            if (lecturers[i].isOnLeave() == true) {
-//                System.out.println(lecturers[i].getName());
-//            }
+            if (lecturers[i].isOnLeave() == true) {
+                System.out.println(lecturers[i].getName());
+            }
         }
     }
     
 
     private void updateLecturerDetails(Lecturer lecturer) {
         // TODO Uncomment these lines once you've implemented the corresponding Lecturer methods.
-//        lecturer.setName("Crystal Ball");
-//        lecturer.setStaffId(23456);
-//        String[] coreStage1Papers = {"CompSci101", "CompSci105"};
-//        lecturer.setPapers(coreStage1Papers);
-//        lecturer.setOnLeave(true);
+        lecturer.setName("Crystal Ball");
+        lecturer.setStaffId(23456);
+        String[] coreStage1Papers = {"CompSci101", "CompSci105"};
+        lecturer.setPapers(coreStage1Papers);
+        lecturer.setOnLeave(true);
     }
     
     private void printNewLecturerDetails(Lecturer lecturer, int number) {
@@ -65,30 +65,30 @@ public class LecturerProgram {
         System.out.println("Updated details for changed lecturer number " + (number + 1));
         System.out.println("---------------------------------------------");
         // TODO Uncomment these lines once you've implemented the corresponding Lecturer methods.
-//        System.out.println("Name: " + lecturer.getName());
-//        System.out.println("Id: " + lecturer.getStaffId());
-//        String[] papers = lecturer.getPapers();
-//        System.out.print("Papers: ");
-//        if (papers.length > 0) {
-//            for (int i = 0; i < papers.length; i++) {
-//                System.out.print(papers[i] + " ");
-//            }
-//        } else {
-//            System.out.print("None");
-//        }
-//        System.out.println();
-//        if (lecturer.isOnLeave()) {
-//            System.out.println("Currently on leave");
-//        }
+        System.out.println("Name: " + lecturer.getName());
+        System.out.println("Id: " + lecturer.getStaffId());
+        String[] papers = lecturer.getPapers();
+        System.out.print("Papers: ");
+        if (papers.length > 0) {
+            for (int i = 0; i < papers.length; i++) {
+                System.out.print(papers[i] + " ");
+            }
+        } else {
+            System.out.print("None");
+        }
+        System.out.println();
+        if (lecturer.isOnLeave()) {
+            System.out.println("Currently on leave");
+        }
     }
     
     private Lecturer getLecturerWithMostPapers(Lecturer[] lecturers) {
         Lecturer lecturerWithMostPapersSoFar = lecturers[0];
         for (int i = 0; i < lecturers.length; i++) {
             // TODO Uncomment these lines once you've implemented the corresponding Lecturer methods.
-//            if (lecturers[i].teachesMorePapersThan(lecturerWithMostPapersSoFar)) {
-//                lecturerWithMostPapersSoFar = lecturers[i];
-//            }
+            if (lecturers[i].teachesMorePapersThan(lecturerWithMostPapersSoFar)) {
+                lecturerWithMostPapersSoFar = lecturers[i];
+            }
         }
         return lecturerWithMostPapersSoFar;
     }
@@ -98,7 +98,7 @@ public class LecturerProgram {
         System.out.println("Most papers");
         System.out.println("-----------");
         // TODO Uncomment these lines once you've implemented the corresponding Lecturer methods.
-//        System.out.println(lecturerWithMostPapers.getName() + " teaches more papers than any other lecturer.");
+        System.out.println(lecturerWithMostPapers.getName() + " teaches more papers than any other lecturer.");
     }
 
     public static void main(String[] args) {
