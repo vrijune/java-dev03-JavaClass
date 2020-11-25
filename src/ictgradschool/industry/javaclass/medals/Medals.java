@@ -15,19 +15,23 @@ public class Medals {
     private int bronzes;  // number of bronze medals
     
     
-    public Medals(/* TODO Add constructor arguments here */) {
+    public Medals(String countryName, int golds, int silvers, int bronzes) {
         // TODO constructor method to initialize the instance variables
         // Parameters are in the order: country, golds, silvers, bronzes
-        
+        this.countryName = countryName;
+        this.golds = golds;
+        this.silvers = silvers;
+        this.bronzes = bronzes;
     }
     
     public String getCountryName() {
         // TODO accessor method to return the country name instance variable
-        return null;
+        return countryName;
     }
     
     public void setCountryName(String countryName) {
         // TODO mutator method to set the country name instance variable
+        this.countryName = countryName;
     }
     
     public boolean isHigherThan(Medals other) {
@@ -47,13 +51,20 @@ public class Medals {
     public boolean hasMoreGoldMedalsThan(Medals other) {
         // TODO Method that returns true if this country has more gold medals than the other.
         // Otherwise it returns false.
-        return false;
+        return this.golds > other.golds;
+
+        //if(this.golds > other.golds){
+         //   return true;
+        //} else {
+          //  return false;
+        //}
     }
     
     
     public String toString() {
         // TODO return a String representing the instance variables formatted as per the hand-out.
-        return null;
+
+        return countryName+ " has " + golds + " gold medals, " + silvers + " silver medals, " + bronzes + " bronzes medals";
     }
 
 }

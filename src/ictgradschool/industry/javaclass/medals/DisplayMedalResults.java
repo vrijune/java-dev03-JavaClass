@@ -10,9 +10,9 @@ public class DisplayMedalResults {
         Medals newZealand = null, australia = null, canada = null;
 
         // TODO Uncomment these lines once they will compile properly.
-        // newZealand = new Medals("New Zealand", 4, 12, 13);
-        // australia = new Medals("Australia", 3, 20, 10);
-        // canada = new Medals("Canada", 6, 5, 7);
+         newZealand = new Medals("New Zealand", 4, 12, 13);
+         australia = new Medals("Australia", 3, 20, 10);
+         canada = new Medals("Canada", 6, 5, 7);
 
         printMedalStatus(newZealand, australia, canada);
         
